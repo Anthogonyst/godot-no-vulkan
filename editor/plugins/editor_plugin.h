@@ -31,7 +31,7 @@
 #pragma once
 
 #include "core/io/config_file.h"
-#include "editor/plugins/editor_context_menu_plugin.h"
+#include "editor/inspector/editor_context_menu_plugin.h"
 #include "scene/3d/camera_3d.h"
 #include "scene/gui/control.h"
 
@@ -254,9 +254,6 @@ public:
 
 	void enable_plugin();
 	void disable_plugin();
-
-	EditorPlugin() {}
-	virtual ~EditorPlugin() {}
 };
 
 VARIANT_ENUM_CAST(EditorPlugin::CustomControlContainer);

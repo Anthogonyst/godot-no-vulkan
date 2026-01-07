@@ -69,7 +69,7 @@ class EditorThemeManager {
 		float relationship_line_opacity = 1.0;
 		int thumb_size = 16;
 		int class_icon_size = 16;
-		bool increase_scrollbar_touch_area = false;
+		bool enable_touch_optimizations = false;
 		float gizmo_handle_scale = 1.0;
 		int color_picker_button_height = 28;
 		float subresource_hue_tint = 0.0;
@@ -133,6 +133,8 @@ class EditorThemeManager {
 		Ref<StyleBoxFlat> button_style_pressed;
 		Ref<StyleBoxFlat> button_style_hover;
 
+		Ref<StyleBoxFlat> circle_style_focus;
+
 		Ref<StyleBoxFlat> popup_style;
 		Ref<StyleBoxFlat> popup_border_style;
 		Ref<StyleBoxFlat> window_style;
@@ -155,7 +157,6 @@ class EditorThemeManager {
 	static void _populate_standard_styles(const Ref<EditorTheme> &p_theme, ThemeConfiguration &p_config);
 	static void _populate_editor_styles(const Ref<EditorTheme> &p_theme, ThemeConfiguration &p_config);
 
-	static void _generate_text_editor_defaults(ThemeConfiguration &p_config);
 	static void _populate_text_editor_styles(const Ref<EditorTheme> &p_theme, ThemeConfiguration &p_config);
 	static void _populate_visual_shader_styles(const Ref<EditorTheme> &p_theme, ThemeConfiguration &p_config);
 
